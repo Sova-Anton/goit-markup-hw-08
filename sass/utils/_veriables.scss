@@ -1,0 +1,25 @@
+:root {
+    /* Основные шрифты */
+    --main-font: 'Roboto', sans-serif;
+    --secondare-font: 'Raleway', sans-serif;
+
+    /* Цвет текста */
+    --main-text: #212121;
+    --akcent-text: #2196f3;
+    --secondary-text: #757575;
+
+    /* Цвет фона */
+    --footer-bg: #2f303a;
+
+    /* Цвет логотипа */
+    --main-logo: #2196f3;
+    --primary-logo: #000000;
+    --secondary-logo: #ffffff;
+
+    /* Цвет SVG-иконок */
+    --svg-color: #afb1b8;
+    --svg-akcent: #2196f3;
+
+    /* Кубик */
+    --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

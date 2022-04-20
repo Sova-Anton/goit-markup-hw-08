@@ -1,0 +1,35 @@
+.client__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+}
+
+.client__list {
+    display: flex;
+}
+
+.client__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: var(--svg-color);
+    transition: fill var(--cubic), border-color var(--cubic);
+
+    &:hover, &:focus {
+        fill: var(--svg-akcent);
+        border-color: var(--svg-akcent);
+    }
+}

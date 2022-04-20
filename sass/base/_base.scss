@@ -1,0 +1,22 @@
+@import "./reset";
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #ffffff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    width: 100%;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
