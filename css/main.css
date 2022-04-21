@@ -93,21 +93,50 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .logo {
-  padding-top: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: var(--secondare-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-logo);
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo--primary {
@@ -116,6 +145,18 @@ img {
 
 .logo--secondary {
   color: var(--secondary-logo);
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
 .header {
@@ -133,7 +174,7 @@ img {
 }
 
 .nav__list {
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 
@@ -175,7 +216,7 @@ img {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
