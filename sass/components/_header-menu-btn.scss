@@ -1,12 +1,22 @@
 .menu-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-
+    position: relative;
+    display: block; 
+    padding: 0;   
     background-color: transparent;
-    border: transparent;
+    border: none;
     outline: none;
-    cursor: pointer;
+    cursor: pointer;   
+    z-index: 1; 
+}
+
+.menu-btn__icon-close {
+    opacity: 0;
+ 
+    .menu-btn.is-open & {
+        opacity: 1;
+    }
+}
+
+.menu-btn.is-open .menu-btn__icon-open {
+    opacity: 0;
 }
