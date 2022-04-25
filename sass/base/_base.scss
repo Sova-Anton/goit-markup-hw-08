@@ -8,6 +8,9 @@ body {
     color: #212121;
     background: #ffffff;
 }
+.no-scroll {
+    overflow-y: hidden;
+}
 
 img {
     display: block;
@@ -17,6 +20,11 @@ img {
 
 .section {
     width: 100%;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }

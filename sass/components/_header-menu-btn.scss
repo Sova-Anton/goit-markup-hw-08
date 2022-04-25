@@ -1,22 +1,39 @@
 .menu-btn {
     position: relative;
-    display: block; 
+    display: flex; 
+    margin-left: auto;
     padding: 0;   
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;   
-    z-index: 1; 
+    z-index: 1;    
+    transition: fill var(--cubic);
+
+    &:hover, &:focus {
+        fill: var(--svg-akcent);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    
 }
 
-.menu-btn__icon-close {
-    opacity: 0;
- 
-    .menu-btn.is-open & {
-        opacity: 1;
+.menu-btn__icon-open {
+    opacity: 1;
+    transition: opacity var(--cubic);
+    
+    .menu-btn.is-active & {
+        opacity: 0;
+        
     }
 }
-
-.menu-btn.is-open .menu-btn__icon-open {
+.menu-btn__icon-close {
     opacity: 0;
+    transition: opacity var(--cubic);
+    
+    .menu-btn.is-active & {
+        opacity: 1;
+    }
 }

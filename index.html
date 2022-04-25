@@ -35,7 +35,7 @@
             data-menu-button
           >
             <svg width="40" height="40">
-              <use class="menu-btn__icon-open" href="./images/icons.svg#icon-menu"></use>
+              <use class="menu-btn__icon-open" href="./images/icons.svg#open-menu"></use>
               <use class="menu-btn__icon-close" href="./images/icons.svg#close-menu"></use>
             </svg>
           </button>
@@ -54,7 +54,7 @@
         <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="icon-mail" width="14" height="10">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -62,7 +62,7 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__link link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="icon-phone" width="10" height="14">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -74,7 +74,7 @@
 
     <main>
       <!-- Hero -->
-      <!-- <section class="hero hero__image">
+      <section class="hero hero__image">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
@@ -126,13 +126,13 @@
                   ></textarea>
                 </label>
 
-                <label class="check-box">
-                  <span class="check-box__text">
+                <label class="checkbox">
+                  <span class="checkbox__text">
                     Соглашаюсь с рассылкой и принимаю
-                    <a class="check-box__link link" href="">Условия договора</a>
+                    <a class="checkbox__link link" href="">Условия&nbspдоговора</a>
                   </span>
-                  <input class="check-box__input" type="checkbox" name="agree" />
-                  <svg class="check-box__icon" width="16" height="15">
+                  <input class="checkbox__input" type="checkbox" name="agree" />
+                  <svg class="checkbox__icon" width="16" height="15">
                     <use href="./images/icons.svg#icon-check"></use>
                   </svg>
                 </label>
@@ -141,10 +141,10 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!--Особенности  -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="advantages list">
@@ -194,10 +194,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Чем мы занимаемся -->
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list list">
@@ -220,10 +220,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наша команда -->
-      <!-- <section class="section team__section">
+      <section class="section team__section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
@@ -384,10 +384,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
-      <!-- <section class="section">
+
+      <section class="section">
         <div class="container">
           <h2 class="client__title">Постоянные клиенты</h2>
           <ul class="client__list list">
@@ -435,81 +436,84 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
-    
+    <footer class="footer">
       <div class="container footer__container">
-        <div>
-          <a class="logo link" href="/index.html"
-            >Web<span class="logo logo--secondary">Studio</span></a
-          >
-          <address class="adress">
-            <ul class="list">
-              <li class="adress__item">
-                <a class="adress__link link" href="https://goo.gl/maps/j2nnSXGD3ZRQ95yC8"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+        <div class="footer__group">
+          <div>
+            <a class="logo link" href="/index.html"
+              >Web<span class="logo logo--secondary">Studio</span></a
+            >
+            <address class="adress">
+              <ul class="list">
+                <li class="adress__item">
+                  <a class="adress__link link" href="https://goo.gl/maps/j2nnSXGD3ZRQ95yC8"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="adress__item">
+                  <a class="adress__contact link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="adress__item">
+                  <a class="adress__contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div>
+            <b class="footer__title">присоединяйтесь</b>
+            <ul class="social-list footer__social-list list">
+              <li class="social-list__item">
+                <a
+                  class="social-list__link social-list__link--fill link"
+                  href=""
+                  aria-label="Instagram"
                 >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress__item">
-                <a class="adress__contact link" href="mailto:info@example.com">info@example.com</a>
+              <li class="social-list__item">
+                <a
+                  class="social-list__link social-list__link--fill link"
+                  href=""
+                  aria-label="Twitter"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress__item">
-                <a class="adress__contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="social-list__item">
+                <a
+                  class="social-list__link social-list__link--fill link"
+                  href=""
+                  aria-label="Facebook"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  class="social-list__link social-list__link--fill link"
+                  href=""
+                  aria-label="Linkedin"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div>
-          <b class="footer__title">присоединяйтесь</b>
-          <ul class="social-list footer__social-list list">
-            <li class="social-list__item">
-              <a
-                class="social-list__link social-list__link--fill link"
-                href=""
-                aria-label="Instagram"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a
-                class="social-list__link social-list__link--fill link"
-                href=""
-                aria-label="Twitter"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a
-                class="social-list__link social-list__link--fill link"
-                href=""
-                aria-label="Facebook"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a
-                class="social-list__link social-list__link--fill link"
-                href=""
-                aria-label="Linkedin"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div>
@@ -526,31 +530,32 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Мобильное меню -->
-    <div class="mobile-overlay data-menu">
-      <div class="mobile-menu">
-        <nav class="mobile-nav">
-          <ul class="mobile-nav__list list">
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link link" href="">Студия</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link link" href="">Портфолио</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+
+    <div class="mobile-menu" data-menu>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link link current" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-group">
         <div class="mobile-contacts">
           <ul class="mobile-contacts__list list">
             <li class="mobile-contacts__item">
-              <a class="mobile-contacts__link link" href="tel:+380961111111"> +38 096 111 11 11</a>
+              <a class="mobile-contacts__phone link" href="tel:+380961111111"> +38 096 111 11 11</a>
             </li>
             <li class="mobile-contacts__item">
-              <a class="mobile-contacts__link link" href="mailto:info@devstudio.com"
+              <a class="mobile-contacts__mail link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -572,6 +577,7 @@
         </ul>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
