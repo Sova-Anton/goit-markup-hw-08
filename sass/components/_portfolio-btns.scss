@@ -2,10 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    margin-top: -15px;
+    
     margin-left: -8px;    
 
     @media screen and (max-width: 767px) {
+        margin-top: -15px;
         margin-left: auto;
         margin-right: auto;
         max-width: 420px;
@@ -22,6 +23,11 @@
 .projects__item {
     margin-top: 15px;
     margin-left: 8px;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 15px;
+        
+    }
    
     
 }
