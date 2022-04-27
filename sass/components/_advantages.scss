@@ -27,6 +27,7 @@
     border-radius: 4px;
 }
 .advantages__title {
+
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -34,6 +35,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text);
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .advantages__text {
