@@ -1013,6 +1013,12 @@ img {
   margin-left: -30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .client__list {
+    margin-top: 0px;
+  }
+}
+
 .client__item {
   margin-top: 30px;
   margin-left: 30px;
@@ -1029,6 +1035,7 @@ img {
 @media screen and (min-width: 1200px) {
   .client__item {
     flex-basis: calc(100% / 6 - 30px);
+    margin-top: 0px;
   }
 }
 
